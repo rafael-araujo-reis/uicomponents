@@ -1,0 +1,142 @@
+* {
+  margin : 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;900&display=swap');
+
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --purple-light: #D6A1FF;
+  --pink-light  : #FF7878;
+  --gray-light  : #D1D1D1;
+  --blue-light  : #3385FF;
+  --blue-glow   : #57F5FF;
+
+  --blue  : #004FA4;
+  --black : #000000;
+  --white : #FFFFFF;
+  --purple: #9A30AB;
+
+  --border: var(--gray-light);
+  --button: var(--pink-light);
+  --title : var(--purple);
+}
+
+/******************
+COMMONS
+******************/
+
+section {
+  padding: 1rem;
+  border : 1px solid #000;
+
+  display       : flex;
+  flex-direction: column;
+}
+
+h2 {
+  color: var(--title);
+}
+
+/******************
+HEADER
+******************/
+header {
+  font-family     : 'Poppins';
+  background-color: var(--purple-light);
+  text-align      : center;
+
+  color: var(--white);
+
+  padding: 1rem;
+}
+
+header h1 {
+  font-weight: 100;
+}
+
+header span {
+  font-weight: 900;
+  color      : var(--blue-glow)
+}
+
+/******************
+BUTTON
+******************/
+.btn {
+  padding: 0.8rem;
+  color  : var(--white);
+
+  font-size: 1rem;
+
+  border: none;
+  width : 12rem;
+
+  margin-top: 1rem;
+}
+
+.btn-pink {
+  background-color: var(--pink-light);
+  border-radius   : 100rem;
+}
+
+.btn-blue {
+  background-color: var(--blue);
+  border-radius   : 0.2rem;
+}
+
+.btn-black {
+  background-color: var(--black);
+}
+
+/******************
+CARDS
+******************/
+.card {
+
+  margin-top: 1rem;
+
+  width : 20%;
+  height: 100px;
+
+  border: 1px solid var(--border);
+}
+
+.card-squart {
+  border-radius: 0px;
+
+  border-left: 15px solid var(--purple)
+}
+
+.card-round {
+  border-radius: 10px;
+
+  border-left: 15px solid var(--purple)
+}
+
+.card-mixer {
+  border-radius: 20px 0;
+}
+
+/******************
+FOOTER
+******************/
+footer {
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+
+  background-color: var(--purple-light);
+  color           : var(--white);
+
+  text-align: center;
+
+  padding: 1rem;
+  height : 200px;
+}
