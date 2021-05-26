@@ -33,15 +33,16 @@ COMMONS
 ******************/
 
 section {
-  padding: 1rem;
-  border : 1px solid #000;
+  padding   : 1rem;
+  /* border : 1px solid #000; */
 
   display       : flex;
   flex-direction: column;
 }
 
 h2 {
-  color: var(--title);
+  color    : var(--title);
+  font-size: 200%;
 }
 
 /******************
@@ -79,6 +80,8 @@ BUTTON
   width : 12rem;
 
   margin-top: 1rem;
+
+  cursor: pointer;
 }
 
 .btn-pink {
@@ -95,6 +98,48 @@ BUTTON
   background-color: var(--black);
 }
 
+.btn-cancel {
+  display   : block;
+  margin-top: 0.2rem;
+
+  text-decoration: none;
+
+  color: var(--blue-light);
+}
+
+/******************
+INPUTS
+******************/
+
+input {
+  margin-top: 1rem;
+  padding   : 0.8rem 0.5rem;
+
+  font-size: 1rem;
+
+  border: 1px solid var(--blue-light);
+
+  color: var(--blue-light)
+}
+
+input::placeholder {
+  color  : var(--blue-light);
+  opacity: 0.7;
+}
+
+#input-clean {
+  border       : none;
+  border-bottom: 1px solid var(--blue-light);
+}
+
+#input-round {
+  border-radius: 0.5rem;
+}
+
+#input-squart {
+  border-radius: 0;
+}
+
 /******************
 CARDS
 ******************/
@@ -102,16 +147,15 @@ CARDS
 
   margin-top: 1rem;
 
-  width : 20%;
-  height: 100px;
+  width : 30%;
+  height: 150px;
 
   border: 1px solid var(--border);
 }
 
 .card-squart {
   border-radius: 0px;
-
-  border-left: 15px solid var(--purple)
+  border-left  : 15px solid var(--purple)
 }
 
 .card-round {
@@ -123,6 +167,38 @@ CARDS
 .card-mixer {
   border-radius: 20px 0;
 }
+
+/******************
+MODAL
+******************/
+
+.modal {
+  border: 1px solid var(--gray-light);
+
+  text-align: center;
+
+  padding: 2rem;
+  margin : 1rem 0.5rem;
+  width  : 600px;
+
+  border-radius: 10px;
+}
+
+.modal h3 {
+  font-size: 3rem;
+
+  color: var(--title)
+}
+
+.modal p {
+  font-size : 1.2rem;
+  text-align: justify;
+}
+
+/******************
+TABLE
+******************/
+
 
 /******************
 FOOTER
